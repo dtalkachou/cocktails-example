@@ -1,0 +1,16 @@
+{
+    "cocktails": [
+        {
+            "title": "Lady's Dancer Sunset",
+            "color": "#f194b4"
+        },
+        {
+            "title": "Orange Mailman G&T",
+            "color": "#ffb100"
+        },
+        {
+            "title": "Butler's Scorpion Sunset",
+            "color": "#5ce9ff"
+        }
+    ]
+}
