@@ -1,0 +1,13 @@
+body {
+    background-color: #efefef;
+    color: #454545;
+    font-family: Lato, sans-serif;
+}
+
+#cocktails li {
+    list-style: none;
+    color: #333;
+    font-size: 1.25em;
+    line-height: 1.75em;
+    font-weight: bold;
+}

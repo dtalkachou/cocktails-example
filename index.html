@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cocktails</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Select your cocktail</h1>
+    <div id="cocktails">
+        <ul class="cocktail-list">
+        </ul>
+    </div>
+    <script>
+        var cocktailsData;
+        fetch('https://dtalkachou.github.io/cocktails-example/data.json')
+            .then(r => {
+                return r.json()
+            })
+            .then(data => {
+                cocktailsData = data;
+                let cocktailList = document.querySelector('#cocktails ul.cocktail-list')
+                data.cocktails.forEach(c => {
+                    let cocktailLi = document.createElement('li')
+                    cocktailLi.innerHTML = c.title
+                    cocktailList.appendChild(cocktailLi)
+                })
+            })
+    </script>
+</body>
+</html>
