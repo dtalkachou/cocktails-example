@@ -32,6 +32,11 @@
                     let cocktailLi = document.createElement('li')
                     cocktailLi.innerHTML = c.title
                     cocktailList.appendChild(cocktailLi)
+
+                    cocktailLi.addEventListener('click', (e) => {
+                        document.querySelector('#cocktail-glass path.content').style.fill = c.color
+                        document.querySelector('#cocktail-glass path.content-shadow').style.fill = '#33333315';
+                    })
                 })
             })
     </script>
