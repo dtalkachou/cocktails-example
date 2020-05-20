@@ -4,7 +4,7 @@ This repository was created to demonstrate the effect of filling a glass with co
 
 ## Demonstration
 
-You can see the demo [here](https://dtalkachou.github.io/cocktails-example/index.html).
+You can see the demo [here](https://dtalkachou.github.io/cocktails-example/).
 
 ## Example
 
