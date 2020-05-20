@@ -20,13 +20,11 @@
         </div>
     </div>
     <script>
-        var cocktailsData;
         fetch('https://dtalkachou.github.io/cocktails-example/data.json')
             .then(r => {
                 return r.json()
             })
             .then(data => {
-                cocktailsData = data;
                 let cocktailList = document.querySelector('#cocktails ul.cocktail-list')
                 data.cocktails.forEach(c => {
                     let cocktailLi = document.createElement('li')
